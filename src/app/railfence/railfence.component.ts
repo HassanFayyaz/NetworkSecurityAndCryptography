@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 import { railfence } from './railfence';
+
 
 @Component({
   selector: 'app-railfence',
@@ -128,3 +130,6 @@ export class RailfenceComponent implements OnInit {
 }
   
 
+  ngOnInit() {}
+  
+}

@@ -12,7 +12,8 @@
             </div>
               <div nz-col nzSpan="6" nzOffset="2">
                 <input nz-input placeholder="Depth" name="key1" [(ngModel)]="textobj.keyInput" />
-              </div>
+                
+                           </div>
             </div>
             <br>
             <br>
@@ -24,7 +25,9 @@
               <br>
               <br>
               <div nz-col nzSpan = "20" nzOffset="2">
+
                 <button nz-button nzType="danger" (click)="encrypt(textobj.plainTextInput,textobj.keyInput)" style="width: 100%;">Encrypted</button>
+
               </div>
             </div>
         </nz-card>
@@ -46,12 +49,17 @@
           <div nz-row>
             <div nz-col nzSpan="20"  nzOffset="2">
               <input nz-input placeholder="Plain Text" name="plaintext2" [(ngModel)]="textobj.plaintextOutput" />
+
             </div>
             <br>
             <br>
             <br>
             <div nz-col nzSpan = "20" nzOffset="2">
+
               <button nz-button nzType="danger" (click)="decrypt(textobj.encryptedtextInput,textobj.key2Input)" style="width: 100%;">Decrypted</button>
+
+
+
             </div>
           </div>
           </nz-card>

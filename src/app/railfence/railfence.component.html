@@ -1,0 +1,63 @@
+<nz-content>
+    <div class="inner-content">
+      <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">Rail Fence Cipher</h2>
+
+
+      <div style="background: #ECECEC;padding:30px;width: 100%;">
+
+        <nz-card style="width: 60%; margin-left: 20%;" [nzBordered]="false" nzTitle="Encryption">
+          <div nz-row>
+            <div nz-col nzSpan="12" nzOffset="2">
+              <input nz-input placeholder="Plain Text" name="plaintext" [(ngModel)]="textobj.plainTextInput" />
+            </div>
+              <div nz-col nzSpan="6" nzOffset="2">
+                <input nz-input placeholder="Depth" name="key1" [(ngModel)]="textobj.keyInput" />
+              </div>
+            </div>
+            <br>
+            <br>
+            <div nz-row>
+              <div nz-col nzSpan="20"  nzOffset="2">
+                <input nz-input placeholder="Cipher Text" name="encryptedtext" [(ngModel)]="textobj.encryptedtext" />
+              </div>
+              <br>
+              <br>
+              <br>
+              <div nz-col nzSpan = "20" nzOffset="2">
+                <button nz-button nzType="danger" (click)="encrypt(textobj.plainTextInput,textobj.keyInput)" style="width: 100%;">Encrypted</button>
+              </div>
+            </div>
+        </nz-card>
+        <br>
+
+        <div style="background: #ECECEC;  width: 100%;">
+          <nz-card style ="width: 60%; margin-left: 20%;" [nzBordered]="false" nzTitle="Decryption" >
+            <div nz-row>
+              <div nz-col nzSpan="12"  nzOffset="2">
+              <input nz-input placeholder="Cipher Text" name ="decryptedtext" [(ngModel)]="textobj.encryptedtextInput" />
+              </div>
+              <div nz-col nzSpan="6"  nzOffset="2">
+                <input nz-input placeholder="Depth" name="key2" [(ngModel)]="textobj.key2Input" />
+              </div>
+          </div>
+          <br>
+          <br>
+  
+          <div nz-row>
+            <div nz-col nzSpan="20"  nzOffset="2">
+              <input nz-input placeholder="Plain Text" name="plaintext2" [(ngModel)]="textobj.plaintextOutput" />
+            </div>
+            <br>
+            <br>
+            <br>
+            <div nz-col nzSpan = "20" nzOffset="2">
+              <button nz-button nzType="danger" (click)="decrypt(textobj.encryptedtextInput,textobj.key2Input)" style="width: 100%;">Decrypted</button>
+            </div>
+          </div>
+          </nz-card>
+        </div>
+      </div>
+
+    </div>
+  </nz-content>
+ 

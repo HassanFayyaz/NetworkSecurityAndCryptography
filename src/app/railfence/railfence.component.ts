@@ -130,6 +130,6 @@ export class RailfenceComponent implements OnInit {
 }
   
 
-  ngOnInit() {}
   
-}
+  
+
